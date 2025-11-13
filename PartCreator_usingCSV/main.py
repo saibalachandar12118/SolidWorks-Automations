@@ -1,3 +1,5 @@
+#Author : SAI BALACHANDAR
+
 import sys, os
 from pathlib import Path
 from PyQt6.QtWidgets import QApplication, QDialog, QLabel, QComboBox, QGroupBox, QFormLayout, QProgressBar, QPushButton, QHBoxLayout, QVBoxLayout
