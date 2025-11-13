@@ -154,7 +154,7 @@ class PartSelectionDialog(QDialog):
         middle_layout.addWidget(image_group)
 
         self.btn_cancel = QPushButton("Cancel")
-        self.btn_apply = QPushButton("Apply")
+        self.btn_apply = QPushButton("Generate Part")
         self.progress_bar = QProgressBar()
         self.progress_bar.setMaximumWidth(200)
         self.progress_bar.setTextVisible(False)
