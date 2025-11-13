@@ -127,7 +127,7 @@ class PartSelectionDialog(QDialog):
         self.directions = [(str(file.stem), str(file)) for file in csv_dir.rglob("*.csv")]
         for display, value in self.directions:
             self.comboBox.addItem(display, value)
-        sel.comboBox.setStyleSheet("""
+        self.comboBox.setStyleSheet("""
             QComboBox {
                 border: 2px solid #555;
                 padding: 4px;
