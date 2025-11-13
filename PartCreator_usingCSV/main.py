@@ -127,6 +127,19 @@ class PartSelectionDialog(QDialog):
         self.directions = [(str(file.stem), str(file)) for file in csv_dir.rglob("*.csv")]
         for display, value in self.directions:
             self.comboBox.addItem(display, value)
+        sel.comboBox.setStyleSheet("""
+            QComboBox {
+                border: 2px solid #555;
+                padding: 4px;
+                border-radius: 5px;
+            }
+            
+            QComboBox QAbstractItemView {
+                border: 1px solid #555;
+                selection-background-color: #3399ff;
+                outline: 0;
+            }
+            """)
         self.comboBox.setCurrentIndex(0)
         self.label_combobox = QLabel("Select the Model : ")
         top_layout.addWidget(self.label_combobox)
